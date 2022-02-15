@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  Main.py
+#  LogicGate.py
 #  
-#  Copyright 2022  <pi@raspberrypi>
+#  Copyright 2022  <chrisrivera>
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -19,15 +19,7 @@
 #  along with this program; if not, write to the Free Software
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
-#  
-#  To get GPIO working
-#    sudo apt update
-#    sudo apt upgrade
-#    sudo apt install rpi.gpio
-#
-#	sudo raspi-config
-#     > Interface updates
-#        > Enable I2C and SPI in raspi-config
+
 
 class LogicGate:
     def __init__(self):
@@ -66,6 +58,7 @@ if __name__ == '__main__':
     print("Logic Gate Started")
     
     #gate.diagnosis()
+    
     while True:
         if button.is_pressed:
             gate.turnOnLED()
